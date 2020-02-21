@@ -1,0 +1,571 @@
+{
+  "boxes": [
+  {
+    "ID": "6028345",
+    "UF_BOX_TYPE": null,
+    "UF_BOX_PLACEMENT": null,
+    "UF_BOX_NUMBER": "8786",
+    "UF_NODE": "8786",
+    "UF_LAT": "55.18487773535551",
+    "UF_LNG": "61.44206651163245",
+    "UF_ADDRESS": "ул. Потемкина, 10, 1п., Я№8786 19\"",
+    "UF_HOUSE_ID": null,
+    "UF_PORCH_ID": null,
+    "UF_SECTOR_ID": "714",
+    "UF_VOLUME": null,
+    "UF_ROTATE": null,
+    "UF_FLOOR": null,
+    "UF_ENTRANCE": null,
+    "UF_XML_ID": "volpstr66xlsxулПотемкина101пЯ№878619",
+    "UF_MEZH": "0",
+    "UF_GPON": "0",
+    "UF_COPPER": "0",
+    "UF_BOX_CITY": "1",
+    "UF_EXCEL_LINK": "../volp/str 66.xlsx-ул. Потемкина, 10, 1п., Я№8786 19\"",
+    "UF_NEW": "0",
+    "UF_DATE_MONTAG": null,
+    "UF_MONTAGER": null,
+    "UF_COMMENT": null,
+    "UF_SERVER_ROOM": null,
+    "UF_CROSS": null,
+    "UF_STATUS": null,
+    "UF_PROJECT_ID": null
+  },
+  {
+    "ID": "6028346",
+    "UF_BOX_TYPE": null,
+    "UF_BOX_PLACEMENT": null,
+    "UF_BOX_NUMBER": "8731",
+    "UF_NODE": "8731",
+    "UF_LAT": "55.18459350797895",
+    "UF_LNG": "61.441404537921926",
+    "UF_ADDRESS": "ул. Потемкина, 12, 3п., Я№8731 19\"",
+    "UF_HOUSE_ID": null,
+    "UF_PORCH_ID": null,
+    "UF_SECTOR_ID": "714",
+    "UF_VOLUME": null,
+    "UF_ROTATE": null,
+    "UF_FLOOR": null,
+    "UF_ENTRANCE": null,
+    "UF_XML_ID": "volpstr66xlsxулПотемкина123пЯ№873119",
+    "UF_MEZH": "0",
+    "UF_GPON": "0",
+    "UF_COPPER": "0",
+    "UF_BOX_CITY": "1",
+    "UF_EXCEL_LINK": "../volp/str 66.xlsx-ул. Потемкина, 12, 3п., Я№8731 19\"",
+    "UF_NEW": "0",
+    "UF_DATE_MONTAG": null,
+    "UF_MONTAGER": null,
+    "UF_COMMENT": null,
+    "UF_SERVER_ROOM": null,
+    "UF_CROSS": null,
+    "UF_STATUS": null,
+    "UF_PROJECT_ID": null
+  },
+  {
+    "ID": "6028405",
+    "UF_BOX_TYPE": null,
+    "UF_BOX_PLACEMENT": null,
+    "UF_BOX_NUMBER": "17380",
+    "UF_NODE": "17380",
+    "UF_LAT": "55.184457356948045",
+    "UF_LNG": "61.441457229680054",
+    "UF_ADDRESS": "ул. Потемкина, 12, 2п., Я№17380",
+    "UF_HOUSE_ID": null,
+    "UF_PORCH_ID": null,
+    "UF_SECTOR_ID": "714",
+    "UF_VOLUME": null,
+    "UF_ROTATE": null,
+    "UF_FLOOR": null,
+    "UF_ENTRANCE": null,
+    "UF_XML_ID": "volpstr66xlsxулПотемкина122пЯ№17380",
+    "UF_MEZH": "1",
+    "UF_GPON": "0",
+    "UF_COPPER": "0",
+    "UF_BOX_CITY": "1",
+    "UF_EXCEL_LINK": "../volp/str 66.xlsx-ул. Потемкина, 12, 2п., Я№17380",
+    "UF_NEW": "0",
+    "UF_DATE_MONTAG": null,
+    "UF_MONTAGER": null,
+    "UF_COMMENT": null,
+    "UF_SERVER_ROOM": null,
+    "UF_CROSS": null,
+    "UF_STATUS": null,
+    "UF_PROJECT_ID": null
+  },
+  {
+    "ID": "6028344",
+    "UF_BOX_TYPE": null,
+    "UF_BOX_PLACEMENT": null,
+    "UF_BOX_NUMBER": "8795",
+    "UF_NODE": "8795",
+    "UF_LAT": "55.18523948305515",
+    "UF_LNG": "61.44276947090407",
+    "UF_ADDRESS": "ул. Г.Танкограда, 48, 3п., Я№8795 19\"",
+    "UF_HOUSE_ID": null,
+    "UF_PORCH_ID": null,
+    "UF_SECTOR_ID": "714",
+    "UF_VOLUME": null,
+    "UF_ROTATE": "65",
+    "UF_FLOOR": null,
+    "UF_ENTRANCE": null,
+    "UF_XML_ID": "volpstr66xlsxулГТанкограда483пЯ№879519",
+    "UF_MEZH": "0",
+    "UF_GPON": "0",
+    "UF_COPPER": "0",
+    "UF_BOX_CITY": "1",
+    "UF_EXCEL_LINK": "../volp/str 66.xlsx-ул. Г.Танкограда, 48, 3п., Я№8795 19\"",
+    "UF_NEW": "0",
+    "UF_DATE_MONTAG": null,
+    "UF_MONTAGER": null,
+    "UF_COMMENT": null,
+    "UF_SERVER_ROOM": null,
+    "UF_CROSS": null,
+    "UF_STATUS": null,
+    "UF_PROJECT_ID": null
+  },
+  {
+    "ID": "6028347",
+    "UF_BOX_TYPE": null,
+    "UF_BOX_PLACEMENT": null,
+    "UF_BOX_NUMBER": "8799",
+    "UF_NODE": "8799",
+    "UF_LAT": "55.18407410630879",
+    "UF_LNG": "61.44037288330446",
+    "UF_ADDRESS": "ул. Потемкина, 14, 4п., Я№8799 19\"",
+    "UF_HOUSE_ID": null,
+    "UF_PORCH_ID": null,
+    "UF_SECTOR_ID": "714",
+    "UF_VOLUME": null,
+    "UF_ROTATE": null,
+    "UF_FLOOR": null,
+    "UF_ENTRANCE": null,
+    "UF_XML_ID": "volpstr66xlsxулПотемкина144пЯ№879919",
+    "UF_MEZH": "0",
+    "UF_GPON": "0",
+    "UF_COPPER": "0",
+    "UF_BOX_CITY": "1",
+    "UF_EXCEL_LINK": "../volp/str 66.xlsx-ул. Потемкина, 14, 4п., Я№8799 19\"",
+    "UF_NEW": "0",
+    "UF_DATE_MONTAG": null,
+    "UF_MONTAGER": null,
+    "UF_COMMENT": null,
+    "UF_SERVER_ROOM": null,
+    "UF_CROSS": null,
+    "UF_STATUS": null,
+    "UF_PROJECT_ID": null
+  }],
+  "cables": [
+  {
+    "ID": "6413554",
+    "UF_SECTOR_ID": "714",
+    "UF_TYPE": null,
+    "UF_MARK": null,
+    "UF_VOLUME": "16",
+    "UF_BEGIN_MARK": "0276м",
+    "UF_END_MARK": "0434м",
+    "UF_LENGTH": "158",
+    "UF_FIBER_COUNT": "16",
+    "UF_MANUFACTURER": null,
+    "UF_DATE_INSTALL": null,
+    "UF_LEFT_MONTAG": null,
+    "UF_LEFT_VOLS": null,
+    "UF_LEFT_CONNECT": null,
+    "UF_RIGHT_MONTAG": null,
+    "UF_RIGHT_VOLS": null,
+    "UF_RIGHT_CONNECT": null,
+    "UF_XML_ID": "../volp/str 66.xlsxОсновные линии P85",
+    "UF_COLORS": [
+    {
+      "MODULE_NUM": 1,
+      "NUM": "1",
+      "COLOR": "нат/кр"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "2",
+      "COLOR": "нат/син"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "3",
+      "COLOR": "нат/зел"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "4",
+      "COLOR": "нат/нат"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "5",
+      "COLOR": "нат/кр"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "6",
+      "COLOR": "нат/син"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "7",
+      "COLOR": "нат/зел"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "8",
+      "COLOR": "нат/нат"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "9",
+      "COLOR": "нат/кр"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "10",
+      "COLOR": "нат/син"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "11",
+      "COLOR": "нат/зел"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "12",
+      "COLOR": "нат/нат"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "13",
+      "COLOR": "нат/кр"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "14",
+      "COLOR": "нат/син"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "15",
+      "COLOR": "нат/зел"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "16",
+      "COLOR": "нат/нат"
+    }],
+    "UF_EXCEL_BRAND": "ООО \"Сарансккабель-Оптика\" 2008г. ОКГ-0,22-16П",
+    "UF_COORDS": null,
+    "UF_GPON": "0",
+    "UF_SHEET_NAME": "Основные линии",
+    "UF_LEFT_BOX": "volpstr66xlsxулГТанкограда483пЯ№879519",
+    "UF_RIGHT_BOX": "volpstr66xlsxулПотемкина101пЯ№878619",
+    "UF_BEGIN_LONG_TZ": null,
+    "UF_END_LONG_TZ": null,
+    "UF_CAB_TYPE": "78",
+    "UF_DATE_MONTAG": null,
+    "UF_COMMENT": null,
+    "UF_DATE_MONTAG_LEFT": null,
+    "UF_DATE_MONTAG_RIGHT": null,
+    "UF_EMPTY_FIBERS": "10",
+    "UF_STATUS": null,
+    "UF_PROJECT_ID": null,
+    "UF_MOUNTS": false
+  },
+  {
+    "ID": "6413555",
+    "UF_SECTOR_ID": "714",
+    "UF_TYPE": null,
+    "UF_MARK": null,
+    "UF_VOLUME": "16",
+    "UF_BEGIN_MARK": "2906м",
+    "UF_END_MARK": "2759м",
+    "UF_LENGTH": "147",
+    "UF_FIBER_COUNT": "16",
+    "UF_MANUFACTURER": null,
+    "UF_DATE_INSTALL": null,
+    "UF_LEFT_MONTAG": null,
+    "UF_LEFT_VOLS": null,
+    "UF_LEFT_CONNECT": null,
+    "UF_RIGHT_MONTAG": null,
+    "UF_RIGHT_VOLS": null,
+    "UF_RIGHT_CONNECT": null,
+    "UF_XML_ID": "../volp/str 66.xlsxОсновные линии R85",
+    "UF_COLORS": [
+    {
+      "MODULE_NUM": 1,
+      "NUM": "1",
+      "COLOR": "нат/кр"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "2",
+      "COLOR": "нат/син"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "3",
+      "COLOR": "нат/зел"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "4",
+      "COLOR": "нат/нат"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "5",
+      "COLOR": "нат/кр"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "6",
+      "COLOR": "нат/син"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "7",
+      "COLOR": "нат/зел"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "8",
+      "COLOR": "нат/нат"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "9",
+      "COLOR": "нат/кр"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "10",
+      "COLOR": "нат/син"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "11",
+      "COLOR": "нат/зел"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "12",
+      "COLOR": "нат/нат"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "13",
+      "COLOR": "нат/кр"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "14",
+      "COLOR": "нат/син"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "15",
+      "COLOR": "нат/зел"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "16",
+      "COLOR": "нат/нат"
+    }],
+    "UF_EXCEL_BRAND": "ООО \"Сарансккабель-Оптика\" 2008г. ОКГ-0,22-16П",
+    "UF_COORDS": null,
+    "UF_GPON": "0",
+    "UF_SHEET_NAME": "Основные линии",
+    "UF_LEFT_BOX": "volpstr66xlsxулПотемкина101пЯ№878619",
+    "UF_RIGHT_BOX": "volpstr66xlsxулПотемкина123пЯ№873119",
+    "UF_BEGIN_LONG_TZ": null,
+    "UF_END_LONG_TZ": null,
+    "UF_CAB_TYPE": "78",
+    "UF_DATE_MONTAG": null,
+    "UF_COMMENT": null,
+    "UF_DATE_MONTAG_LEFT": null,
+    "UF_DATE_MONTAG_RIGHT": null,
+    "UF_EMPTY_FIBERS": "9",
+    "UF_STATUS": null,
+    "UF_PROJECT_ID": null,
+    "UF_MOUNTS": false
+  },
+  {
+    "ID": "6413556",
+    "UF_SECTOR_ID": "714",
+    "UF_TYPE": null,
+    "UF_MARK": null,
+    "UF_VOLUME": "16",
+    "UF_BEGIN_MARK": "2720м",
+    "UF_END_MARK": "2969м",
+    "UF_LENGTH": "249",
+    "UF_FIBER_COUNT": "16",
+    "UF_MANUFACTURER": null,
+    "UF_DATE_INSTALL": null,
+    "UF_LEFT_MONTAG": "Власов М.Ю.",
+    "UF_LEFT_VOLS": "Алимбеков И.Н.",
+    "UF_LEFT_CONNECT": "Конюхов, Зухович",
+    "UF_RIGHT_MONTAG": "Власов М.Ю.",
+    "UF_RIGHT_VOLS": "Алимбеков И.Н.",
+    "UF_RIGHT_CONNECT": "Конюхов, Зухович",
+    "UF_XML_ID": "../volp/str 66.xlsxОсновные линии T85",
+    "UF_COLORS": [
+    {
+      "MODULE_NUM": 1,
+      "NUM": "1",
+      "COLOR": "нат/кр"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "2",
+      "COLOR": "нат/син"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "3",
+      "COLOR": "нат/зел"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "4",
+      "COLOR": "нат/нат"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "5",
+      "COLOR": "нат/кр"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "6",
+      "COLOR": "нат/син"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "7",
+      "COLOR": "нат/зел"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "8",
+      "COLOR": "нат/нат"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "9",
+      "COLOR": "нат/кр"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "10",
+      "COLOR": "нат/син"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "11",
+      "COLOR": "нат/зел"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "12",
+      "COLOR": "нат/нат"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "13",
+      "COLOR": "нат/кр"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "14",
+      "COLOR": "нат/син"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "15",
+      "COLOR": "нат/зел"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "16",
+      "COLOR": "нат/нат"
+    }],
+    "UF_EXCEL_BRAND": "ООО \"Сарансккабель-Оптика\" 2008г. ОКГ-0,22-16П",
+    "UF_COORDS": ["55.1843,61.441487"],
+    "UF_GPON": "0",
+    "UF_SHEET_NAME": "Основные линии",
+    "UF_LEFT_BOX": "volpstr66xlsxулПотемкина123пЯ№873119",
+    "UF_RIGHT_BOX": "volpstr66xlsxулПотемкина144пЯ№879919",
+    "UF_BEGIN_LONG_TZ": null,
+    "UF_END_LONG_TZ": null,
+    "UF_CAB_TYPE": "78",
+    "UF_DATE_MONTAG": null,
+    "UF_COMMENT": null,
+    "UF_DATE_MONTAG_LEFT": null,
+    "UF_DATE_MONTAG_RIGHT": null,
+    "UF_EMPTY_FIBERS": "9",
+    "UF_STATUS": null,
+    "UF_PROJECT_ID": null,
+    "UF_MOUNTS": false
+  },
+  {
+    "ID": "6413618",
+    "UF_SECTOR_ID": "714",
+    "UF_TYPE": null,
+    "UF_MARK": null,
+    "UF_VOLUME": "4",
+    "UF_BEGIN_MARK": "0905м",
+    "UF_END_MARK": "0856м",
+    "UF_LENGTH": "49",
+    "UF_FIBER_COUNT": "4",
+    "UF_MANUFACTURER": null,
+    "UF_DATE_INSTALL": null,
+    "UF_LEFT_MONTAG": "неизвестен",
+    "UF_LEFT_VOLS": "Колосов В.А.",
+    "UF_LEFT_CONNECT": "Меркурьев Д.В.",
+    "UF_RIGHT_MONTAG": "неизвестен",
+    "UF_RIGHT_VOLS": "Колосов В.А.",
+    "UF_RIGHT_CONNECT": "Меркурьев Д.В.",
+    "UF_XML_ID": "../volp/str 66.xlsxМежподъезды D197",
+    "UF_COLORS": [
+    {
+      "MODULE_NUM": 1,
+      "NUM": "1",
+      "COLOR": "нат/кр"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "2",
+      "COLOR": "нат/син"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "3",
+      "COLOR": "нат/зел"
+    },
+    {
+      "MODULE_NUM": 1,
+      "NUM": "4",
+      "COLOR": "нат/жел"
+    }],
+    "UF_EXCEL_BRAND": "ТПО-4п.",
+    "UF_COORDS": null,
+    "UF_GPON": "0",
+    "UF_SHEET_NAME": "Межподъезды",
+    "UF_LEFT_BOX": "volpstr66xlsxулПотемкина123пЯ№873119",
+    "UF_RIGHT_BOX": "volpstr66xlsxулПотемкина122пЯ№17380",
+    "UF_BEGIN_LONG_TZ": null,
+    "UF_END_LONG_TZ": null,
+    "UF_CAB_TYPE": "81",
+    "UF_DATE_MONTAG": null,
+    "UF_COMMENT": null,
+    "UF_DATE_MONTAG_LEFT": null,
+    "UF_DATE_MONTAG_RIGHT": null,
+    "UF_EMPTY_FIBERS": null,
+    "UF_STATUS": null,
+    "UF_PROJECT_ID": null,
+    "UF_MOUNTS": false
+  }]
+}
