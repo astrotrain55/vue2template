@@ -1,12 +1,12 @@
 import Vue from 'vue';
-import vuetify from './plugins/vuetify';
-import leaflet from './plugins/leaflet';
-import router from './router';
-import store from './store';
-import App from './App.vue';
+import router from '@/router';
+import store from '@/store';
+import vuetify from '@/plugins/vuetify';
+import L from '@/plugins/leaflet';
+import App from '@/App.vue';
 
 Vue.config.productionTip = false;
-leaflet();
+Vue.use(L);
 
 new Vue({
   router,

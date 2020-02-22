@@ -9,7 +9,7 @@
       @ready="readyLayers"/>
     <l-tile-layer
       v-for="tileProvider in tileProviders"
-      :key="tileProvider.name"
+      :key="tileProvider.url"
       :name="tileProvider.name"
       :visible="tileProvider.visible"
       :url="tileProvider.url"
@@ -18,26 +18,24 @@
       <l-marker
         v-for="marker in markers"
         :key="marker.coords.join('.')"
-        :lat-lng="marker.coords"
-        :icon="marker.icon">
+        :icon="marker.icon"
+        :draggable="true"
+        :lat-lng="marker.coords">
         <l-popup>{{ marker.popup }}</l-popup>
         <l-tooltip>{{ marker.tooltip }}</l-tooltip>
       </l-marker>
     </l-marker-cluster>
+    <l-polyline
+      v-for="(polyline, key) in polylines"
+      :key="`${key}_${polyline.color}`"
+      :lat-lngs="polyline.coords"
+      :color="polyline.color"/>
   </l-map>
 </template>
 
 <script>
-import trim from 'lodash/trim';
-import map from 'lodash/map';
-import template from 'lodash/template';
 import test from '@/api/test.json';
-
-const _ = {
-  trim,
-  map,
-  template,
-};
+import _ from '@/plugins/lodash';
 
 function tpl(data, name) {
   const templates = document.querySelector('#templates');
@@ -51,7 +49,7 @@ function tpl(data, name) {
 export default {
   mounted() {
     this.$nextTick(() => {
-      console.log(this.cables);
+      this.$refs.map.fitBounds(this.bounds);
     });
   },
 
@@ -67,6 +65,16 @@ export default {
       {
         name: 'OSM',
         url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        visible: false,
+      },
+      {
+        name: 'OSM-HOT',
+        url: 'http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
+        visible: false,
+      },
+      {
+        name: 'OSM-INTL',
+        url: 'http://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png',
         visible: true,
       },
     ],
@@ -76,7 +84,8 @@ export default {
     markers() {
       return _.map(test.boxes, (box) => ({
         coords: [Number(box.UF_LAT), Number(box.UF_LNG)],
-        icon: L.divIcon({ // eslint-disable-line
+        icon: this.$L.divIcon({
+          popupAnchor: [0, 0],
           html: tpl({
             id: box.UF_XML_ID,
             address: box.UF_ADDRESS,
@@ -86,21 +95,49 @@ export default {
           }, 'box'),
         }),
         tooltip: box.UF_ADDRESS,
-        popup: `
-          Ящик: ${box.UF_BOX_NUMBER}.
-          Адрес: ${box.UF_ADDRESS}.`,
+        popup: `Ящик ${box.UF_BOX_NUMBER} (${box.UF_ADDRESS})`,
       }));
     },
 
-    cables() {
+    polylines() {
+      // return _.map(test.cables, (cable) => ({
+      //   color: '#167244',
+      //   coords() {
+      //     const coords = [];
+
+      //     if (cable.UF_COORDS) {
+      //       _.each(cable.UF_COORDS, (item) => {
+      //         const bounds = _.split(item, ',');
+      //         const lat = Number(_.trim(bounds[0]));
+      //         const lng = Number(_.trim(bounds[1]));
+
+      //         coords.push([lat, lng]);
+      //       });
+      //     }
+
+      //     return coords;
+      //   },
+      // }));
+
       return _.map(test.cables, (cable) => cable);
+    },
+
+    bounds() {
+      return this.markers.map((m) => m.coords);
     },
   },
 
   methods: {
     readyLayers(layers) {
-      layers.addBaseLayer(L.yandex(), 'Yandex'); // eslint-disable-line
+      layers.addBaseLayer(this.$L.yandex(), 'Yandex');
     },
   },
 };
 </script>
+
+<style lang="stylus">
+.leaflet-fake-icon-image-2x
+  background-image url('~leaflet/dist/images/marker-icon-2x.png')
+.leaflet-fake-icon-shadow
+  background-image url('~leaflet/dist/images/marker-shadow.png')
+</style>

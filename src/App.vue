@@ -27,12 +27,13 @@
         </div>
       </router-link>
       <v-spacer></v-spacer>
-      <router-link to="/map">
-        <v-btn text>
-          <span class="mr-2">MAP</span>
-          <v-icon>mdi-map</v-icon>
-        </v-btn>
-      </router-link>
+      <v-btn
+        href="http://leaflet.github.io/Leaflet.Editable/doc/api.html"
+        target="_blank"
+        text>
+        <span class="mr-2">Leaflet.Editable</span>
+        <v-icon>mdi-square-edit-outline</v-icon>
+      </v-btn>
       <v-btn
         href="https://vue2-leaflet.netlify.com/components/"
         target="_blank"
@@ -40,6 +41,12 @@
         <span class="mr-2">vue2-leaflet</span>
         <v-icon>mdi-information</v-icon>
       </v-btn>
+      <router-link to="/map">
+        <v-btn text>
+          <span class="mr-2">MAP</span>
+          <v-icon>mdi-map</v-icon>
+        </v-btn>
+      </router-link>
     </v-app-bar>
 
     <v-content>
