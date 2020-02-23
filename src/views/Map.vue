@@ -1,6 +1,6 @@
 <template>
   <v-container class="fill-height pa-0" fluid>
-    <leaflet />
+    <leaflet/>
   </v-container>
 </template>
 

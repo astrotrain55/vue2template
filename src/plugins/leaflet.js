@@ -6,11 +6,15 @@ import {
   LMap,
   LControlLayers,
   LTileLayer,
-  LPolyline,
   LMarker,
+  LPolyline,
   LTooltip,
   LPopup,
 } from 'vue2-leaflet';
+import {
+  EditableMap,
+  EditablePolyline,
+} from 'vue2-leaflet-editable';
 import LMarkerCluster from 'vue2-leaflet-markercluster';
 
 import 'leaflet/dist/leaflet.css';
@@ -34,6 +38,8 @@ export default {
     Vue.component('l-marker-cluster', LMarkerCluster);
     Vue.component('l-tooltip', LTooltip);
     Vue.component('l-popup', LPopup);
+    Vue.component('e-map', EditableMap);
+    Vue.component('e-polyline', EditablePolyline);
 
     Vue.prototype.$L = L;
   },

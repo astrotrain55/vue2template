@@ -1,18 +1,15 @@
 import axios from 'axios';
 import qs from 'qs';
-import _ from 'lodash';
+import _ from '@/plugins/lodash';
 
 const isData = (data) => data && _.size(data);
 const resError = (error) => Promise.reject(error);
 
 const instance = axios.create({
-  // baseURL: process.env.NODE_ENV === 'production' ? '/ajax/' : 'http://example.com:80/ajax/',
+  baseURL: process.env.NODE_ENV === 'production' ? '/ajax/' : '/ajax/',
   method: 'post',
   transformRequest(data) {
-    if (isData(data)) {
-      return qs.stringify(data);
-    }
-
+    if (isData(data)) return qs.stringify(data);
     return data;
   },
 });

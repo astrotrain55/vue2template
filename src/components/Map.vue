@@ -1,12 +1,14 @@
 <template>
-  <l-map
+  <e-map
     ref="map"
     :zoom="zoom"
     :center="center"
-    :options="mapOptions">
+    :options="options"
+    :bounds="bounds"
+    :editable="true">
     <l-control-layers
-      position="topright"
-      @ready="readyLayers"/>
+      position="topleft"
+      @ready="addYandexLayer"/>
     <l-tile-layer
       v-for="tileProvider in tileProviders"
       :key="tileProvider.url"
@@ -14,122 +16,90 @@
       :visible="tileProvider.visible"
       :url="tileProvider.url"
       layer-type="base"/>
-    <l-marker-cluster>
-      <l-marker
-        v-for="marker in markers"
-        :key="marker.coords.join('.')"
-        :icon="marker.icon"
-        :draggable="true"
-        :lat-lng="marker.coords">
-        <l-popup>{{ marker.popup }}</l-popup>
-        <l-tooltip>{{ marker.tooltip }}</l-tooltip>
-      </l-marker>
-    </l-marker-cluster>
-    <l-polyline
-      v-for="(polyline, key) in polylines"
-      :key="`${key}_${polyline.color}`"
+    <l-marker
+      v-for="marker in markers"
+      :key="marker.id"
+      :icon="marker.icon"
+      :draggable="true"
+      :lat-lng="marker.coords"/>
+    <e-polyline
+      v-for="polyline in listLines"
+      :key="polyline.id"
+      :editable="polyline.editable"
       :lat-lngs="polyline.coords"
-      :color="polyline.color"/>
-  </l-map>
+      :color="polyline.color"
+      @click="toggleEdit(polyline)"/>
+  </e-map>
 </template>
 
 <script>
-import test from '@/api/test.json';
+import { mapState, mapMutations, mapActions } from 'vuex';
+import db from '@/api/DataBase';
 import _ from '@/plugins/lodash';
-
-function tpl(data, name) {
-  const templates = document.querySelector('#templates');
-  const el = templates.querySelector(`[title=${name}]`);
-  const markup = _.trim(el.textContent);
-  const compiled = _.template(markup);
-
-  return compiled({ _, ...data });
-}
+import t from '@/tools';
 
 export default {
-  mounted() {
-    this.$nextTick(() => {
-      this.$refs.map.fitBounds(this.bounds);
+  created() {
+    db.getEssences((markers, lines) => {
+      this.initMarkers(markers);
+      this.initLines(lines);
     });
   },
 
-  data: () => ({
-    zoom: 16,
-    center: [55.1699231, 61.4512017],
-    mapOptions: {
-      doubleClickZoom: false,
-      zoomControl: false,
-      attributionControl: false,
-    },
-    tileProviders: [
-      {
-        name: 'OSM',
-        url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        visible: false,
-      },
-      {
-        name: 'OSM-HOT',
-        url: 'http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
-        visible: false,
-      },
-      {
-        name: 'OSM-INTL',
-        url: 'http://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png',
-        visible: true,
-      },
-    ],
-  }),
+  mounted() {
+    this.init(this.$refs.map);
+  },
 
   computed: {
+    ...mapState('map', ['zoom', 'center', 'options', 'tileProviders']),
+    ...mapState('map/markers', {
+      listMarkers: 'list',
+    }),
+    ...mapState('map/lines', {
+      listLines: 'list',
+    }),
+
     markers() {
-      return _.map(test.boxes, (box) => ({
-        coords: [Number(box.UF_LAT), Number(box.UF_LNG)],
-        icon: this.$L.divIcon({
-          popupAnchor: [0, 0],
-          html: tpl({
-            id: box.UF_XML_ID,
-            address: box.UF_ADDRESS,
-            azimuth: box.UF_ROTATE || 0,
-            number: box.UF_BOX_NUMBER || box.UF_ADDRESS,
-            cross: !box.UF_CROSS ? false : 'no-cross',
-          }, 'box'),
-        }),
-        tooltip: box.UF_ADDRESS,
-        popup: `Ящик ${box.UF_BOX_NUMBER} (${box.UF_ADDRESS})`,
-      }));
-    },
+      return _.map(this.listMarkers, (marker) => {
+        marker.icon = this.$L.divIcon({
+          html: t.tpl('marker', marker),
+        });
 
-    polylines() {
-      // return _.map(test.cables, (cable) => ({
-      //   color: '#167244',
-      //   coords() {
-      //     const coords = [];
-
-      //     if (cable.UF_COORDS) {
-      //       _.each(cable.UF_COORDS, (item) => {
-      //         const bounds = _.split(item, ',');
-      //         const lat = Number(_.trim(bounds[0]));
-      //         const lng = Number(_.trim(bounds[1]));
-
-      //         coords.push([lat, lng]);
-      //       });
-      //     }
-
-      //     return coords;
-      //   },
-      // }));
-
-      return _.map(test.cables, (cable) => cable);
+        return marker;
+      });
     },
 
     bounds() {
-      return this.markers.map((m) => m.coords);
+      const result = [];
+
+      _.each(this.listMarkers, (marker) => {
+        result.push(marker.coords);
+      });
+
+      _.each(this.listLines, (polyline) => {
+        result.push(...polyline.coords);
+      });
+
+      return result;
     },
   },
 
   methods: {
-    readyLayers(layers) {
+    ...mapActions('map', ['getEssences']),
+    ...mapMutations('map', ['init']),
+    ...mapMutations('map/markers', {
+      initMarkers: 'init',
+    }),
+    ...mapMutations('map/lines', {
+      initLines: 'init',
+    }),
+
+    addYandexLayer(layers) {
       layers.addBaseLayer(this.$L.yandex(), 'Yandex');
+    },
+
+    toggleEdit(polyline) {
+      polyline.editable = !polyline.editable;
     },
   },
 };

@@ -26,7 +26,7 @@
           />
         </div>
       </router-link>
-      <v-spacer></v-spacer>
+      <v-spacer/>
       <v-btn
         href="http://leaflet.github.io/Leaflet.Editable/doc/api.html"
         target="_blank"
