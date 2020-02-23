@@ -2,24 +2,23 @@ import Ajax from '@/plugins/axios';
 
 class DataBase {
   constructor() {
-    this.baseURL = 'http://zvo.is.szdl.ru:80/ajax/';
+    this.ajax = Ajax;
   }
 
-  request(props) {
-    console.log(this);
-    return Ajax(props);
+  request(...props) {
+    return this.ajax(...props);
   }
 
-  getRegion() {
-    this.request({
-      url: `${this.baseURL}getRegionByCoords.php`,
-      data: {
-        TOP_LAT: 55.18489,
-        TOP_LNG: 61.44208,
-        BOTTOM_LAT: 55.18422,
-        BOTTOM_LNG: 61.4409,
-      },
-    });
+  getEssences(fn) {
+    const method = 'get';
+
+    return this.request({
+      method,
+      url: 'markers.json',
+    }, {
+      method,
+      url: 'lines.json',
+    }, fn);
   }
 }
 
