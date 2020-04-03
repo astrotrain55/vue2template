@@ -18,6 +18,11 @@ export default {
     },
     tileProviders: [
       {
+        name: '2GIS',
+        url: 'http://tile2.maps.2gis.com/tiles?x={x}&y={y}&z={z}',
+        visible: true,
+      },
+      {
         name: 'OSM',
         url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         visible: false,
@@ -30,7 +35,7 @@ export default {
       {
         name: 'OSM-INTL',
         url: 'http://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png',
-        visible: true,
+        visible: false,
       },
     ],
   },
