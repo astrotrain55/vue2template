@@ -49,9 +49,9 @@
       </router-link>
     </v-app-bar>
 
-    <v-content>
+    <v-main>
       <router-view/>
-    </v-content>
+    </v-main>
     <Templates/>
   </v-app>
 </template>

@@ -1,5 +1,6 @@
 <template>
   <e-map
+    v-if="bounds.length"
     ref="map"
     :zoom="zoom"
     :center="center"
